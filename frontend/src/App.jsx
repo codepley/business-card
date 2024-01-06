@@ -15,7 +15,7 @@ function App() {
   })
 
   return (
-    <div className='min-h-screen bg-green-200 flex'>
+    <div className='min-h-screen bg-green-200 flex md:flex-row flex-col'>
       <AddDetail userData={userData} setUserData={setUserData} />
       <Card userData={userData} />
     </div>

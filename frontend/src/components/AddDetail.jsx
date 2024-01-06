@@ -66,7 +66,7 @@ const AddDetail = ({ userData, setUserData }) => {
   }
 
   return (
-    <div className="w-[40%]">
+    <div className="w-full md:w-[40%]">
       <div className="h-full flex flex-col gap-5 justify-center items-center">
         <h1 className="font-bold mt-4 text-xl">Add Your Card Details</h1>
         <form className="flex flex-col gap-2 w-[80%]">
@@ -185,7 +185,7 @@ const AddDetail = ({ userData, setUserData }) => {
               placeholder="twitterLink"
             />
           </div>
-          <button type="button" onClick={() => setUserData(tempData)}>
+          <button className="bg-black text-white p-2" type="button" onClick={() => setUserData(tempData)}>
             Add to card
           </button>
         </form>

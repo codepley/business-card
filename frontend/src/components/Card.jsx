@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
 const Card = ({ userData }) => {
   return (
-    <div className="h-screen w-[70%] bg-pink-400 flex items-center justify-center">
-      <div className="h-[80%] sm:w-[90%] md:w-[50%] w-[25%] bg-white rounded-xl">
+    <div className="h-screen w-full md:w-[70%] bg-pink-400 flex items-center justify-center">
+      <div className="h-[80%] sm:w-[90%] lg:w-[50%] md:w-[70%] w-[90%] bg-white rounded-xl">
         <div className="h-[40%] bg-black rounded-t-xl text-white flex flex-col justify-center items-center">
             <h1 className="text-3xl font-bold">{userData.name}</h1>
             <p>{userData.description}</p>
