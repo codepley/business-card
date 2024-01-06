@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const Card = ({ userData }) => {
   return (
-    <div className="h-screen w-full bg-pink-400 flex items-center justify-center">
+    <div className="h-screen w-[70%] bg-pink-400 flex items-center justify-center">
       <div className="h-[80%] sm:w-[90%] md:w-[50%] w-[25%] bg-white rounded-xl">
         <div className="h-[40%] bg-black rounded-t-xl text-white flex flex-col justify-center items-center">
             <h1 className="text-3xl font-bold">{userData.name}</h1>
@@ -20,7 +20,7 @@ const Card = ({ userData }) => {
             <div className="h-[40%] p-5">
                <h2 className="text-xl font-bold">Skills:</h2>
                <ul className="px-4 grid grid-cols-2">
-                  {userData.interest.map((item, index) => {
+                  {userData.skills.map((item, index) => {
                      return <li className="" key={index}> - {item}</li>
                   })}
                </ul>
